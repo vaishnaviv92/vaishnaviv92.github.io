@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./build/*.html'],
+  content: ['./*.html'],
   theme: {
     extend: {
       colors: {
-        'sage': '#D0DFC9',
+        'sage': '#D1DBBD',
         'navlightgrey': '#E9E9E9'
       },
       fontFamily: {

@@ -27,7 +27,7 @@
         <p class="text-3xl italic pt-5">I'm happy you're here!</p>
       </div>
     </section>
-    <section id="about-me" class="bg-white min-h-screen font-cantarell">
+    <section id="about-me" class="bg-white font-cantarell">
       <div> 
         <h2 class="text-3xl pt-5 pl-5">About Me</h2>
         <ul class="pt-5 pl-5 text-xl space-y-5">
@@ -49,7 +49,7 @@
           </li>
         </ul>
 
-        <button class="mt-5 ml-5 p-2 text-xl space-y-5 border-2 border-black rounded-full">
+        <button class="mt-5 ml-5 mb-5 p-2 text-xl space-y-5 border-2 border-black rounded-full">
           <a class="" href="build/assets/Vinodhkanna_Vaishnavi.pdf" download="Vinodhkanna_Vaishnavi.pdf">Download Resume</a>
         </button>
       </div>
@@ -59,11 +59,39 @@
       <h2 class="text-3xl pt-5 pl-5">Education</h2>
       <div class="flex flex-row">
         <div class="flex flex-row items-center mt-10">
-          <img src="build/assets/images/cornelllogo.png" class="rounded-full h-20 ml-10">
-          <div class="ml-4">
-            <h3 class="text-2xl">Cornell University</h3>
-            <p class="text-sm">B.S. in Computer Science</p>
-            <p class="text-sm">Dyson Business Minor for Engineer</p>
+          <div class="flex flex-row">
+            <img src="build/assets/images/cornelllogo.png" class="rounded-full h-20 ml-10">
+            <div class="ml-4">
+              <h3 class="text-2xl">Cornell University</h3>
+              <p class="text-sm">B.S. in Computer Science</p>
+              <p class="text-sm">Dyson Business Minor for Engineer</p>
+            </div>
+            <div class = "flex flex-col ml-96">
+              <h3 class="text-2xl mb-5">Courses</h3>
+              <div class = "flex flex-row -ml-28 mb-5 space-x-4">
+                <div>
+                  <button class="bg-slate-400">Computer Science</button>
+                </div>
+                <div>
+                  <button class="bg-slate-400">Math/Statistics</button>
+                </div>
+                <div>
+                  <button class="bg-slate-400">Business</button>
+                </div>
+              </div>
+              <div class="bg-white h-72 w-96 -ml-32">
+                <ul>
+                  <li>CS1110: Introduction to Computing Using Python</li>
+                  <li>CS2110: Object-Oriented Programming and Data Structures</li>
+                  <li>CS2800: Discrete Structures</li>
+                  <li>CS3110: Data Structures and Functional Programming</li>
+                  <li>CS3410: Computer System Organization and Programming</li>
+                  <li>CS4300: Language and Information</li>
+                  <li>CS4780: Introduction to Machine Learning</li>
+                  <li>CS4820: Introduction to Analysis of Algorithms</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
         
@@ -84,13 +112,21 @@
             <div class="absolute w-3 h-3 bg-gray-500 rounded-full mt-1.5 -left-1.5 border border-white"></div>
             <time class="text-sm text-gray-500">June 2022-August 2022</time>
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Software Engineer Intern @ Microsoft</h3>
-            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              Delivered a Backend job that autoscaled CosmosDB throughput provisioning for the Microsoft Accounts(MSA) team in the Identity and Network Access(IDNA) division
+              Ensured reduction of unnecessary throughput upscaling as well as downscaled throughput, thereby reducing cost of goods sold(COGS) by ~50%.
+              Developed and presented a design document to senior software engineers that detailed both the high level solution as well as implementation specifics.
+            </p>
         </li>
         <li class="mb-10 ml-4">
           <div class="absolute w-3 h-3 bg-gray-500 rounded-full mt-1.5 -left-1.5 border border-white"></div>
           <time class="text-sm text-gray-500">June 2023-August 2023</time>
           <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Software Engineer Intern @ Microsoft</h3>
-          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+            Delivered a Full-Stack feature that enables Entra ID customers to preview branding configurations changes prior to it going live to optimize the authentication UX customization process for over 10,000 enterprise customers. 
+            Utilized C# for the Server-side of the Microsoft Entra ID(Azure Active Directory) admin portal API endpoint as well as KnockoutJS to develop an accessible and compliant UI/UX.
+            Employed defensive programming and web application security principles to ensure that the API endpoint was secure.
+            Ensured feature performance of < 1 second, enabling near-instant ability to visually validate custom company branding in the authentication UX.</p>
       </li>
       <li class="mb-10 ml-4">
         <div class="absolute w-3 h-3 bg-gray-500 rounded-full mt-1.5 -left-1.5 border border-white"></div>
@@ -102,16 +138,46 @@
         <div class="absolute w-3 h-3 bg-gray-500 rounded-full mt-1.5 -left-1.5 border border-white"></div>
         <time class="text-sm text-gray-500">March 2024-Present</time>
         <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Software Engineer @ Microsoft</h3>
-        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Get access to over 20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order E-commerce & Marketing pages.</p>
+        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Excited to start my first full-time position back @ Microsoft!</p>
       </li>
     </div>
 
     </section>
     <section id="projects" class="bg-sage min-h-screen font-cantarell">
       <h2 class="text-3xl pt-5 pl-5">Projects</h2>
+      <div class = "ml-20 mt-5 grid grid-cols-3 gap-4">
+        <div href=""class = "h-72 w-60 rounded-lg bg-white">
+          <img src="build/assets/images/froggit.png" class="rounded-lg">
+          <!-- <video autoplay>
+            <source src="build/assets/images/froggit.mov" type="video/mp4" >
+          </video> -->
+          <p class="text-xl pl-20">Froggit</p>
+        </div>
+        <div class = "h-72 w-60 rounded-lg bg-white">
+          <img src="build/assets/images/flavorsofindia.png" class="rounded-lg">
+          <p class="text-xl pl-14">Flavors of India</p>
+        </div>
+        <div class = "h-72 w-60 rounded-lg bg-white">
+          <img src="build/assets/images/im.png" class="rounded-lg">
+          <p class="text-xl pl-4">Instant Messaging System</p>
+        </div>
+        <div class = "h-72 w-60 rounded-lg bg-white">
+          <img src="build/assets/images/dataviz.png" class="rounded-lg">
+          <p class="text-xl pl-4">Data Visualizations</p>
+        </div>
+        <div class = "h-72 w-60 rounded-lg bg-white">
+          <img src="build/assets/images/enigma.png" class="rounded-lg">
+          <p class="text-xl pl-4">Enigma in OCaml</p>
+        </div>
+        <div class = "h-72 w-60 rounded-lg bg-white">
+          <img src="build/assets/images/personalweb.png">
+          <p class="text-xl pl-4">Personal Website</p>
+        </div>
+
+      </div>
     </section>
-    <footer class="bg-gray-400 min-h-full py-10">
+    <!-- <footer class="bg-gray-400 min-h-full py-10">
       <p>footer footer footer</p>
-    </footer>
+    </footer> -->
   </body>
 </html>
