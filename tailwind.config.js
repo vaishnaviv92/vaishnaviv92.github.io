@@ -4,8 +4,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'sage': '#D1DBBD',
-        'navlightgrey': '#E9E9E9'
+        'sage': '#A2B1AB',
+        // 'sage':'#D0DFC9',
+        'navlightgrey': '#E9E9E9',
+        'offwhite': '#EFEFE9',
+        'earth': '#B0632B'
+
       },
       fontFamily: {
         'lato': ['lato', 'sans-serif'],
