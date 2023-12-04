@@ -8,6 +8,7 @@ module.exports = {
         // 'sage':'#D0DFC9',
         'navlightgrey': '#E9E9E9',
         'offwhite': '#EFEFE9',
+        'offwhitehover': '#dbdbd5',
         'earth': '#B0632B'
 
       },

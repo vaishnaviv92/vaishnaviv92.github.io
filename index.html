@@ -11,24 +11,23 @@
 </head>
   <body>
     <header class="bg-gray-200 fixed w-full">
-      <nav class="py-5 flex justify-between font-cantarell text-xl">
+      <nav class="z-10 py-5 sm:flex justify-between font-cantarell text-xl">
         <a href="#" class="ml-5">Vaishnavi Vinodhkanna</a>
-        <div class="flex justify-end space-x-5 pr-5">
-          <a href="#about-me" class="">About</a>
-          <a href="#education">Education</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
+        <div class="flex max-sm:flex-col space-x-5 pr-5">
+          <a href="#about-me" class="ml-5 hover:underline">About Me</a>
+          <a href="#projects" class="hover:underline">Projects</a>
+          <a href="#experience" class="hover:underline">Experience</a>
         </div>
       </nav>
     </header>
-    <section id="home" class="bg-sage min-h-screen flex flex-row items-center">
+    <section id="home" class="bg-sage min-h-screen flex flex-row items-center max-sm:flex-col">
       <img src="build/assets/images/vaish.png" class="h-1/3 w-1/3 rounded-full my-20 mx-10 flex mt-36">
-      <div class="font-lato">
+      <div class="font-lato mx-auto">
         <h1 class="text-6xl">Vaishnavi Vinodhkanna</h1>
         <p class="text-3xl italic pt-5">I'm happy you're here! :)</p>
       </div>
     </section>
-    <section id="about-me" class="bg-offwhite font-cantarell">
+    <section id="about-me" class="bg-offwhite pt-12 font-cantarell">
       <h2 class="text-3xl pt-5 pl-5">About Me</h2>
       <div class="flex flex-row">
         <div class="grow"> 
@@ -58,57 +57,42 @@
         <div class="w-8/12 pl-10 pt-6 pr-10 text-lg">
           <p>Hi! My name is Vaishnavi and I am a senior pursuing a B.S. in Computer Science at Cornell University. 
           I enjoy using software engineering to create a positive impact through innovation and problem-solving. 
-          I would love to connect and learn about your journey! If you would like to reach out, feel free to do so 
-          at vv92@cornell.edu or message me right here on LinkedIn.
+          I would love to connect and learn about your journey! 
           </p>
          
         </div>
       </div>
-
     </section>
-    <section id="education" class="bg-sage min-h-screen font-cantarell">
-      <h2 class="text-3xl pt-5 pl-5">Education</h2>
-      <div class="flex flex-row">
-        <div class="flex flex-row items-center mt-10">
-          <div class="flex flex-row">
-            <img src="build/assets/images/cornelllogo.png" class="rounded-full h-20 ml-10">
-            <div class="ml-4">
-              <h3 class="text-2xl">Cornell University</h3>
-              <p class="text-sm">B.S. in Computer Science</p>
-              <p class="text-sm">Dyson Business Minor for Engineer</p>
-            </div>
-            <div class = "flex flex-col ml-96">
-              <h3 class="text-2xl mb-5">Courses</h3>
-              <div class = "flex flex-row -ml-28 mb-5 space-x-4">
-                <div>
-                  <button class="bg-slate-400">Computer Science</button>
-                </div>
-                <div>
-                  <button class="bg-slate-400">Math/Statistics</button>
-                </div>
-                <div>
-                  <button class="bg-slate-400">Business</button>
-                </div>
-              </div>
-              <div class="bg-offwhite h-72 w-96 -ml-32">
-                <ul>
-                  <li>CS1110: Introduction to Computing Using Python</li>
-                  <li>CS2110: Object-Oriented Programming and Data Structures</li>
-                  <li>CS2800: Discrete Structures</li>
-                  <li>CS3110: Data Structures and Functional Programming</li>
-                  <li>CS3410: Computer System Organization and Programming</li>
-                  <li>CS4300: Language and Information</li>
-                  <li>CS4780: Introduction to Machine Learning</li>
-                  <li>CS4820: Introduction to Analysis of Algorithms</li>
-                </ul>
-              </div>
-            </div>
+    <section id="projects" class="bg-sage font-cantarell py-12">
+      <h2 class="text-3xl pt-5 pl-5">Projects</h2>
+      <div class = "ml-20 mt-5 grid grid-cols-4 gap-4">
+        <a href = "froggit.html">
+          <div class = "h-72 w-60 rounded-lg bg-offwhite hover:bg-offwhitehover">
+            <img src="build/assets/images/froggit.png" class="bg-cover bg-center inset-0 rounded-lg z-0">
+            <p class="text-xl pl-20">Froggit</p>
           </div>
+        </a> 
+        <a href="https://github.com/vaishnavi-vinodh/4300-Template-Spring-2023" target="_blank">
+          <div class = "h-72 w-60 rounded-lg bg-offwhite hover:bg-offwhitehover">
+            <img src="build/assets/images/flavorsofindia.png" class="rounded-lg">
+            
+            <p class="text-xl pl-14">Flavors of India</p>
+          </div>
+        </a>  
+        <a href="https://github.coecis.cornell.edu/cs3110-camlgram/camlgram" target="_blank">
+          <div class = "h-72 w-60 rounded-lg bg-offwhite hover:bg-offwhitehover">
+            <img src="build/assets/images/im.png" class="rounded-lg">
+            <p class="text-xl pl-4">Instant Messaging System</p>
+          </div>
+        </a>
+        <div class = "h-72 w-60 rounded-lg bg-offwhite hover:bg-offwhitehover">
+          <img src="build/assets/images/dataviz1.png" class="rounded-lg">
+          <a href="dataviz.html" class="text-xl pl-8">Data Visualizations</a>
         </div>
-        
-      </div>  
+      </div>
     </section>
-    <section id="experience" class="bg-offwhite min-h-screen font-cantarell">
+    
+    <section id="experience" class="bg-offwhite min-h-screen pt-12 font-cantarell">
       <h2 class="text-3xl pt-5 pl-5">Experience</h2>
       <div class="ml-10">
         <ol class="relative border-l border-gray-500">                  
@@ -145,51 +129,16 @@
         <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Undergaduate TA: Introductory Design and Programming for the Web</h3>
         <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"> Held weekly office hours to answer students’ questions regarding course material both in person and on an online question-answer forum. Led weekly discussion sections and grade assignments for ~30 students and helped them solidify their understanding in course material.</p>
       </li>
-      <li class="mb-10 ml-4">
+      <li class="pb-10 ml-4">
         <div class="absolute w-3 h-3 bg-gray-500 rounded-full mt-1.5 -left-1.5 border border-white"></div>
         <time class="text-sm text-gray-500">March 2024-Present</time>
         <h3 class="text-lg font-semibold text-gray-900 dark:text-white">Software Engineer @ Microsoft</h3>
-        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">Excited to start my first full-time position back @ Microsoft!</p>
+        <p class="text-base font-normal text-gray-500 dark:text-gray-400">Excited to start my first full-time position back @ Microsoft!</p>
       </li>
     </div>
-
     </section>
-    <section id="projects" class="bg-sage min-h-screen font-cantarell">
-      <h2 class="text-3xl pt-5 pl-5">Projects</h2>
-      <div class = "ml-20 mt-5 grid grid-cols-3 gap-4">
-        <div href=""class = "h-72 w-60 rounded-lg bg-offwhite">
-          <img src="build/assets/images/froggit.png" class="rounded-lg">
-          <!-- <video autoplay>
-            <source src="build/assets/images/froggit.mov" type="video/mp4" >
-          </video> -->
-          <p class="text-xl pl-20">Froggit</p>
-        </div>
-        <a href="https://github.com/vaishnavi-vinodh/4300-Template-Spring-2023" target="_blank">
-          <div class = "h-72 w-60 rounded-lg bg-offwhite">
-            <img src="build/assets/images/flavorsofindia.png" class="rounded-lg">
-            <p class="text-xl pl-14">Flavors of India</p>
-          </div>
-        </a>  
-        <div class = "h-72 w-60 rounded-lg bg-offwhite">
-          <img src="build/assets/images/im.png" class="rounded-lg">
-          <p class="text-xl pl-4">Instant Messaging System</p>
-        </div>
-        <div class = "h-72 w-60 rounded-lg bg-offwhite">
-          <img src="build/assets/images/dataviz.png" class="rounded-lg">
-          <p class="text-xl pl-4">Data Visualizations</p>
-        </div>
-        <div class = "h-72 w-60 rounded-lg bg-offwhite">
-          <img src="build/assets/images/enigma.png" class="rounded-lg">
-          <p class="text-xl pl-4">Enigma in OCaml</p>
-        </div>
-        <div class = "h-72 w-60 rounded-lg bg-offwhite">
-          <img src="build/assets/images/personalweb.png">
-          <p class="text-xl pl-4">Personal Website</p>
-        </div>
-
-      </div>
-    </section>
-    <footer class="bg-navlightgrey min-h-full py-10 flex flex-row justify-center space-x-5">
+    
+    <footer class="bg-sage min-h-full py-10 flex flex-row justify-center space-x-5">
       <a href = "mailto:vaishu.vin02@gmail.com">
         <img src="build/assets/images/email.png" class="w-16 h-16">
       </a>
